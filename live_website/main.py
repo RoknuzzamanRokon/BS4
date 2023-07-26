@@ -39,6 +39,14 @@ for tag in all_article_tag:
 
 article_upvote = soup.find_all(name='span', class_="score")
 
+for tag in article_upvote:
+    text = tag.getText()
+    # print(text)
+
+article_upvote = [score.getText() for score in soup.find_all(name='span', class_="score")]
+
+
+print(article_upvote)
 
 print(article_link)
 print(article_text)
