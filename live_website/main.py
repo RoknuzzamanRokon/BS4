@@ -5,8 +5,11 @@ response = requests.get("https://news.ycombinator.com/news")
 lv_web_page = response.text
 
 soup = BeautifulSoup(lv_web_page, "html.parser")
-# print(soup.find_all('a'))
-all_tag = soup.find(name='a', rel="noreferrer")
+all_tag_find = soup.find_all(name='a', rel="noreferrer")
 
+for tag in all_tag_find:
+    all_tags_find_all = tag.getText()
+    print(all_tags_find_all)
 
-print(all_tag.getText())
+# all_tag = soup.find(name='a', rel="noreferrer")
+# print(all_tag.getText())
