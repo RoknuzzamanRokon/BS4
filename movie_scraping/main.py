@@ -36,7 +36,7 @@ for item in movie_list:
     years.append(year)
 
 
-# with open('movies.csv', 'w') as csvfile:
+with open('movies.csv', 'w') as csvfile:
 #     fieldnames = ['Number', 'Name', 'Year']
 #     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 #
