@@ -37,8 +37,8 @@ for item in movie_list:
 
 
 with open('movies.csv', 'w') as csvfile:
-#     fieldnames = ['Number', 'Name', 'Year']
-#     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    fieldnames = ['Number', 'Name', 'Year']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 #
 #     writer.writeheader()
 #     for i in range(len(movie_list)):
