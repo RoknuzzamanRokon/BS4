@@ -1,6 +1,6 @@
 import requests
 # import csv
-# from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup
 
 url = "https://www.imdb.com/search/title/?groups=top_100&sort=user_rating,desc"
 url_requests = requests.get(url)
@@ -8,7 +8,7 @@ url_requests = requests.get(url)
 url_text_requests = url_requests.text
 
 
-# soup = BeautifulSoup(url_text_requests, "html.parser")
+soup = BeautifulSoup(url_text_requests, "html.parser")
 #
 #
 # all_movie_list = soup.find_all(name='h3', class_="lister-item-header")
