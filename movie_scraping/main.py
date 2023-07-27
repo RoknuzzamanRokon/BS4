@@ -1,5 +1,5 @@
 import requests
-# import csv
+import csv
 from bs4 import BeautifulSoup
 
 url = "https://www.imdb.com/search/title/?groups=top_100&sort=user_rating,desc"
@@ -35,11 +35,6 @@ for item in movie_list:
     year = item.split('(')[1].split(')')[0]
     years.append(year)
 
-# Print the separated lists
-print("Numbers:", numbers)
-print("Names:", names)
-print("Years:", years)
-
 
 # with open('movies.csv', 'w') as csvfile:
 #     fieldnames = ['Number', 'Name', 'Year']
@@ -48,7 +43,7 @@ print("Years:", years)
 #     writer.writeheader()
 #     for i in range(len(movie_list)):
 #         writer.writerow({'Number': numbers[i], 'Name': names[i], 'Year': years[i]})
-#
-#
-#
-#
+
+
+
+
