@@ -41,8 +41,8 @@ with open('movies.csv', 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 #
     writer.writeheader()
-#     for i in range(len(movie_list)):
-#         writer.writerow({'Number': numbers[i], 'Name': names[i], 'Year': years[i]})
+    for i in range(len(movie_list)):
+        writer.writerow({'Number': numbers[i], 'Name': names[i], 'Year': years[i]})
 
 
 
