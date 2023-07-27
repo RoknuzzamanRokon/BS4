@@ -9,13 +9,13 @@ url_text_requests = url_requests.text
 
 
 soup = BeautifulSoup(url_text_requests, "html.parser")
-#
-#
-# all_movie_list = soup.find_all(name='h3', class_="lister-item-header")
-# movie_list = []
-# for movie in all_movie_list:
-#     lists = movie.getText()
-#     movie_list.append(lists)
+
+
+all_movie_list = soup.find_all(name='h3', class_="lister-item-header")
+movie_list = []
+for movie in all_movie_list:
+    lists = movie.getText()
+    movie_list.append(lists)
 #
 #
 # numbers = []
