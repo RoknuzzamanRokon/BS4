@@ -16,12 +16,12 @@ movie_list = []
 for movie in all_movie_list:
     lists = movie.getText()
     movie_list.append(lists)
-#
-#
-# numbers = []
-# names = []
-# years = []
-#
+
+
+numbers = []
+names = []
+years = []
+
 # for item in movie_list:
 #     # Separate the number using string manipulation
 #     number = item.split('.')[0].split('\n')[1].strip()
