@@ -22,19 +22,19 @@ numbers = []
 names = []
 years = []
 
-# for item in movie_list:
-#     # Separate the number using string manipulation
-#     number = item.split('.')[0].split('\n')[1].strip()
-#     numbers.append(number)
-#
-#     # Separate the name using string manipulation
-#     name = item.split('\n')[2].strip()
-#     names.append(name)
-#
-#     # Separate the year using string manipulation
-#     year = item.split('(')[1].split(')')[0]
-#     years.append(year)
-#
+for item in movie_list:
+    # Separate the number using string manipulation
+    number = item.split('.')[0].split('\n')[1].strip()
+    numbers.append(number)
+
+    # Separate the name using string manipulation
+    name = item.split('\n')[2].strip()
+    names.append(name)
+
+    # Separate the year using string manipulation
+    year = item.split('(')[1].split(')')[0]
+    years.append(year)
+
 # # Print the separated lists
 # print("Numbers:", numbers)
 # print("Names:", names)
