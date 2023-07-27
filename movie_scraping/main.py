@@ -35,12 +35,12 @@ for item in movie_list:
     year = item.split('(')[1].split(')')[0]
     years.append(year)
 
-# # Print the separated lists
-# print("Numbers:", numbers)
-# print("Names:", names)
-# print("Years:", years)
-#
-#
+# Print the separated lists
+print("Numbers:", numbers)
+print("Names:", names)
+print("Years:", years)
+
+
 # with open('movies.csv', 'w') as csvfile:
 #     fieldnames = ['Number', 'Name', 'Year']
 #     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
