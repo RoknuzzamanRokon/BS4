@@ -47,11 +47,11 @@ article_upvote = [int(score.getText().split()[0]) for score in soup.find_all(nam
 
 # print(article_text)
 # print(article_link)
-# print(article_upvote)
+print(article_upvote)
 
 
 max_number = max(article_upvote)
-print(max_number)
+# print(max_number)
 max_index = article_upvote.index(max_number)
 max_text = article_text[max_index]
 max_link = article_link[max_index]
